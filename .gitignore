@@ -1,0 +1,9 @@
+.idea/
+
+__pycache__/
+
+build/
+dist/
+get_blank.py
+main.spec
+
