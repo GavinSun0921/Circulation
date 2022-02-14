@@ -35,14 +35,14 @@ class Application(ttk.Frame):
         blank_img = ImageTk.PhotoImage(blank_img)
 
         self.picOpenPreviewFrame = ttk.Labelframe(self.framePics, text='原图片', padding=10)
-        self.picOpenPreviewFrame.grid(row=0, column=0, padx=20, pady=10)
+        self.picOpenPreviewFrame.grid(row=0, column=0, padx=10, pady=10)
         self.picOpenPreview = ttk.Label(self.picOpenPreviewFrame)
         self.picOpenPreview.pack()
         self.picOpenPreview.configure(image=blank_img)
         self.picOpenPreview.image = blank_img
 
         self.picOutputPreviewFrame = ttk.Labelframe(self.framePics, text='新图片', padding=10)
-        self.picOutputPreviewFrame.grid(row=0, column=1, padx=20, pady=10)
+        self.picOutputPreviewFrame.grid(row=0, column=1, padx=10, pady=10)
         self.picOutputPreview = ttk.Label(self.picOutputPreviewFrame)
         self.picOutputPreview.pack()
         self.picOutputPreview.configure(image=blank_img)
@@ -55,13 +55,13 @@ class Application(ttk.Frame):
         self.frameController.grid(row=1, column=0, padx=5, pady=5)
 
         self.leftFrame = ttk.Labelframe(self.frameController, text='执行')
-        self.leftFrame.grid(row=0, column=0, padx=5)
+        self.leftFrame.grid(row=0, column=0)
 
         self.middleFrame = ttk.Labelframe(self.frameController, text='选择颜色')
-        self.middleFrame.grid(row=0, column=1, padx=5)
+        self.middleFrame.grid(row=0, column=1, padx=22)
 
         self.rightFrame = ttk.Labelframe(self.frameController, text='导出')
-        self.rightFrame.grid(row=0, column=2, padx=5)
+        self.rightFrame.grid(row=0, column=2)
 
         btn_width = 8
 
@@ -73,14 +73,14 @@ class Application(ttk.Frame):
         self.btnRender.configure(width=btn_width)
 
         self.colorChoose = ttk.Notebook(self.middleFrame)
-        self.colorChoose.pack()
+        self.colorChoose.pack(expand=True, fill=BOTH)
 
         self.color1 = ttk.Frame(self.colorChoose)
         self.color.set('#CB061D')
         self.btn_red = ttk.Radiobutton(self.color1, text='红底', variable=self.color, value='#CB061D');
-        self.btn_red.grid(row=0, column=0, padx=5, pady=10)
+        self.btn_red.grid(row=0, column=0, padx=5, pady=25)
         self.btn_blue = ttk.Radiobutton(self.color1, text='蓝底', variable=self.color, value='#00A5F1');
-        self.btn_blue.grid(row=0, column=1, padx=5, pady=10)
+        self.btn_blue.grid(row=0, column=1, padx=5, pady=25)
 
         self.color2 = ttk.Frame(self.colorChoose)
         self.btnChooseColor = ttk.Button(self.color2, text='选择颜色', command=self.chooseColor)
