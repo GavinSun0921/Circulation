@@ -13,19 +13,19 @@
 
 #### 程序启动主界面
 
-<img src="img\ref\mainWindow.png" alt="mainWindow" width="300px" />
+<div align=center><img src="img\ref\mainWindow.png" alt="mainWindow" width="300px" /></div>
 
 #### 选择 demo.jpeg 图片后
 
-<img src="img\ref\openPic.png" alt="mainWindow" width="300px" />
+<div align=center><img src="img\ref\openPic.png" alt="mainWindow" width="300px" /></div>
 
 #### 点击转换底色后
 
-<img src="img\ref\transPic.png" alt="mainWindow" width="300px" />
+<div align=center><img src="img\ref\transPic.png" alt="mainWindow" width="300px" /></div>
 
 #### 可切换标签页到自选颜色
 
-<img src="img\ref\customColor.png" alt="mainWindow" width="800px" />
+<div align=center><img src="img\ref\customColor.png" alt="mainWindow" width="800px" /></div>
 
 ## 项目结构
 
