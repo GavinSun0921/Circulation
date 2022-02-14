@@ -13,26 +13,19 @@
 
 #### 程序启动主界面
 
-<div align=center>
 <img src="F:\PycharmProjects\pythonProject\img\ref\mainWindow.png" alt="mainWindow" style="zoom:50%; center" />
-</div>
+
 #### 选择 demo.jpeg 图片后
 
-<div align=center>
 <img src="F:\PycharmProjects\pythonProject\img\ref\openPic.png" alt="mainWindow" style="zoom:50%; center" />
-</div>
 
 #### 点击转换底色后
 
-<div align=center>
 <img src="F:\PycharmProjects\pythonProject\img\ref\transPic.png" alt="mainWindow" style="zoom:50%; center" />
-</div>
 
 #### 可切换标签页到自选颜色
 
-<div align=center>
 <img src="F:\PycharmProjects\pythonProject\img\ref\customColor.png" alt="mainWindow" style="zoom:50%; center" />
-</div>
 
 ## 项目结构
 
