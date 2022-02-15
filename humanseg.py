@@ -1,5 +1,5 @@
 import os.path
-
+import paddle
 import paddlehub as hub
 
 
@@ -13,4 +13,4 @@ def seg(filename):
 
 
 if __name__ == '__main__':
-    print(seg(filename='img/demo2.jpeg'))
+    print(seg(filename='img/demo.jpeg'))

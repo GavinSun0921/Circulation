@@ -1,10 +1,11 @@
 import ttkbootstrap as ttk
+
 from Application import Application
 
 
-def clear(root, app: Application):
-    app.clear()
-    root.quit()
+def clear(_root, _app: Application):
+    _app.clear()
+    _root.quit()
 
 
 if __name__ == '__main__':

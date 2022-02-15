@@ -107,11 +107,11 @@ class Application(ttk.Frame):
             img = ImageTk.PhotoImage(img)
             self.picOpenPreview.configure(image=img)
             self.picOpenPreview.image = img
+            self.outputdir = seg(self.filename)
 
     def render(self):
-        if self.filename is not None and self.filename != '':
+        if self.outputdir is not None and self.outputdir != '':
             colorHEX = self.color.get()
-            self.outputdir = seg(self.filename)
 
             base_img = Image.open(self.outputdir)
             background = Image.new('RGBA', base_img.size, colorHEX)
@@ -138,9 +138,9 @@ class Application(ttk.Frame):
             outputFilename = tkf.asksaveasfilename(initialdir=os.getcwd(), initialfile='未命名', defaultextension='.jpg',
                                                    title='Export As JPG',
                                                    filetypes=(('*.jpg', '*.jpeg'), ('All Files', '*.*')))
-            # print(outputFilename)
-            jpg_image = self.image_final.convert('RGB')
-            jpg_image.save(outputFilename)
+            if outputFilename is not None and outputFilename != '':
+                jpg_image = self.image_final.convert('RGB')
+                jpg_image.save(outputFilename)
 
     def export_png(self):
         if self.cachefilename is None or self.cachefilename == '':
@@ -149,7 +149,8 @@ class Application(ttk.Frame):
             outputFilename = tkf.asksaveasfilename(initialdir=os.getcwd(), initialfile='未命名', defaultextension='.png',
                                                    title='Export As PNG',
                                                    filetypes=(('*.png', '*.png'), ('All Files', '*.*')))
-            self.image_final.save(outputFilename)
+            if outputFilename is not None and outputFilename != '':
+                self.image_final.save(outputFilename)
 
     def clear(self):
         if self.outputdir is not None:
