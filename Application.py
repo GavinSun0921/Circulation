@@ -152,7 +152,7 @@ class Application(ttk.Frame):
             if outputFilename is not None and outputFilename != '':
                 self.image_final.save(outputFilename)
 
-    def clear(self):
+    def clear(self) -> None:
         if self.outputdir is not None:
             os.remove(self.outputdir)
             self.outputdir = None
