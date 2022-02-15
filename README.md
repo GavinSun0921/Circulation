@@ -45,6 +45,7 @@
 - Application.py 完成程序界面和事件绑定
 - humanseg.py 完成人像与背景分离的任务
 
-## 希望能有大佬帮忙进行一下打包
+## 打包
 
-个人使用 pyinstaller 打包后一直出现问题
+- [x] PyInstaller （体积较大）
+- [ ] Nuitka
