@@ -1,1 +1,0 @@
-nuitka --mingw64 --standalone --show-progress --show-memory --enable-plugin=numpy --plugin-enable=tk-inter --nofollow-imports --follow-import-to=src main.py --include-package=paddle
