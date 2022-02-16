@@ -4,9 +4,8 @@ paddle_path = 'D:\Anaconda\envs\GUIDemo\Lib\site-packages\paddle\\'
 paddle_libs_path = f'{paddle_path}libs'
 
 PyInstaller.__main__.run([
-    'main.py',
-    # '-w',
-    '-F',
+    'Circulation.py',
+    '-D',
     '--noconfirm',
     '--clean',
 
@@ -14,15 +13,22 @@ PyInstaller.__main__.run([
     'paddle.fluid.proto',
 
     '--add-data',
-    '.\module;.\module',
-
+    '.\\img\\blank.png;.\\img',
     '--add-data',
-    './img/blank.png;.',
+    '.\\module\\*;.\\module',
 
-    '--additional-hooks-dir',
-    paddle_path,
+    '--exclude-module',
+    'matplotlib',
+
+    '--exclude-module',
+    'pandas',
+
+'--exclude-module',
+    'sklearn',
+
     '--additional-hooks-dir',
     '.',
     '--log-level',
     'WARN',
 ])
+

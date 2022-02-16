@@ -36,7 +36,7 @@
 ├── img
 │   ├── blank.png
 │   └── demo.jpeg
-├── main.py
+├── Circulation.py
 └── module/deeplabv3p_xception65_humanseg
 ```
 
