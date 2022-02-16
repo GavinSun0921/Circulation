@@ -1,6 +1,5 @@
 import os
-import tkinter
-from tkinter import messagebox
+from tkinter import messagebox, StringVar
 from tkinter.colorchooser import askcolor
 
 from PIL import Image, ImageTk
@@ -18,7 +17,7 @@ class Application(ttk.Frame):
         self.pack()
         self.master = master
 
-        self.color = tkinter.StringVar()
+        self.color = StringVar()
         self.image_final = None
         self.cachefilename = None
         self.filename = None

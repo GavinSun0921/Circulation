@@ -1,8 +1,6 @@
+from src.Application import Application
 import ttkbootstrap as ttk
 
-from src.Application import Application
-# from dist.paddle.fluid.proto import framework_pb2
-# import paddle.fluid.proto
 
 def clear(_root, _app: Application):
     _app.clear()
