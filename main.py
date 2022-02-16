@@ -1,6 +1,6 @@
 import ttkbootstrap as ttk
 
-from Application import Application
+from src.Application import Application
 # from dist.paddle.fluid.proto import framework_pb2
 # import paddle.fluid.proto
 
@@ -11,6 +11,7 @@ def clear(_root, _app: Application):
 
 if __name__ == '__main__':
     root = ttk.Window(title='图片处理')
+    root.place_window_center()
 
     app = Application(master=root)
 
