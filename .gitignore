@@ -8,6 +8,5 @@ dist/
 main.dist/
 
 get_blank.py
-main.spec
 
 cache/
