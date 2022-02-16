@@ -3,7 +3,10 @@
 __pycache__/
 
 build/
+main.build/
 dist/
+main.dist/
+
 get_blank.py
 main.spec
 
