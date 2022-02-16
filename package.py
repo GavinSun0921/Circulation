@@ -23,9 +23,6 @@ PyInstaller.__main__.run([
     '--exclude-module',
     'pandas',
 
-'--exclude-module',
-    'sklearn',
-
     '--additional-hooks-dir',
     '.',
     '--log-level',
