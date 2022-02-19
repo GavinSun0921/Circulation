@@ -15,7 +15,7 @@ PyInstaller.__main__.run([
     '--add-data',
     '.\\img\\blank.png;.\\img',
     '--add-data',
-    '.\\module\\*;.\\module',
+    '.\\module;.\\module',
 
     '--exclude-module',
     'matplotlib',
