@@ -2,10 +2,8 @@
 
 __pycache__/
 
-build/
-main.build/
-dist/
-main.dist/
+*build/
+*dist/
 
 get_blank.py
 
